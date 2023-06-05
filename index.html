@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Machine Learning</h1>
+        <p>Este modelo foi treinado para indetificar:
+            <hr>
+            <b class="objetos">Tsuru
+            <hr>
+            Cubo
+            <hr>
+            Dado
+            <hr></b>
+        </p>
+        <h3>Visualização da webcam</h3>
+        <div id="SLA">        
+            <div id="camera"></div>
+            <div id="result"></div>
+        </div>
+        <button onclick="tirarFoto()">Tirar foto</button>
+        <button onclick="checar()">Checar imagem</button>
+        <br>
+        <label>Objeto: </label><label id="nomeObjeto"></label>
+        <hr>
+        <label>Precisão: </label><label id="precisao"></label>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
